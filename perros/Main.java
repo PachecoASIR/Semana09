@@ -7,4 +7,5 @@ public class Main {
 
         System.out.println("El Pastor presenta las siguiente características: " + Pastor.tipo_pelo() + " " + Pastor.color_pelo() + " " + Pastor.numero_chip());
     }
+//Si cambiamos los atributos a private, main deja de detectarlos y por ende el código no funciona correctamente
 }
