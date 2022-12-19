@@ -11,7 +11,7 @@ public class Main {
         Pastor.setpeso(24);
         Pastor.setaltura(55);
 
-        System.out.println("El Pastor presenta las siguiente características: \nPelo: " + Pastor.getpelo() + "\nColor: " + Pastor.getcolor() + "\nChip: " + Pastor.getchip() + "\nPeso: " + Pastor.getpeso() + "kg" + "\nAltura: " + Pastor.getaltura() + "cm");
+        System.out.println("El Pastor presenta las siguiente características: \nPelo: " + Pastor.getpelo() + "\nColor: " + Pastor.getcolor() + "\nChip: " + Pastor.getchip() + "\nPeso: " + Pastor.getpeso() + "kg" + "\nAltura: " + Pastor.getaltura() + "cm" + "\nLadrido: " + Pastor.ladrar(Pastor.getpeso(),Pastor.getaltura()));
     }
 //Si cambiamos los atributos a private, main deja de detectarlos y por ende el código no funciona correctamente
 }

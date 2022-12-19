@@ -37,5 +37,19 @@ public class Perro {
             }  
         public void setaltura(int altura) {
             this.altura = altura;
-            }            
+            }
+
+        public String ladrar(int n1, int n2){
+            
+            String ladrido = "";
+            peso = n1;
+            altura = n2;
+        
+            if (peso>10 && altura>25) {
+                ladrido ="Ladrido 1";
+            } else if (peso<=10 && altura<=25) {
+                ladrido ="Ladrido 2";
+            }
+            return ladrido;
+        }            
     }
