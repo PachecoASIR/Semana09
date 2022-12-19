@@ -2,16 +2,11 @@ package perros;
 
 public class Main {
     public static void main(String[] args) {
-      
-        Perro Pastor = new Perro();
 
-        Pastor.setpelo("Rizo");
-        Pastor.setcolor("Blanco");
-        Pastor.setchip(7777);
-        Pastor.setpeso(24);
-        Pastor.setaltura(55);
+        Perro arr[] = {new Perro("Pastor","Rizo","Blanco",7777,24,55), new Perro("Husky","Liso","Negro",7778,11,25), new Perro("Shiba","Liso","Beige",7779,9,24)};
 
-        System.out.println("El Pastor presenta las siguiente características: \nPelo: " + Pastor.getpelo() + "\nColor: " + Pastor.getcolor() + "\nChip: " + Pastor.getchip() + "\nPeso: " + Pastor.getpeso() + "kg" + "\nAltura: " + Pastor.getaltura() + "cm" + "\nLadrido: " + Pastor.ladrar(Pastor.getpeso(),Pastor.getaltura()));
+        for(int i=0;i<arr.length;i++){
+            System.out.println(arr[i]);
+        }
     }
-//Si cambiamos los atributos a private, main deja de detectarlos y por ende el código no funciona correctamente
 }
