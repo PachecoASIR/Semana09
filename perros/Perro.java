@@ -2,22 +2,56 @@ package perros;
 
 public class Perro {
 
-        private String raza;
-        private String pelo;
-        private String color;
-        private int chip;
+        private String pelo = "Liso";
+        private String color = "Marron";
+        private int chip = 777;
         private int peso;
         private int altura;
-         
-        public Perro(String newraza,String newpelo,String newcolor,int newchip,int newpeso,int newaltura){
-            raza=newraza;
-            pelo=newpelo;
-            color=newcolor;
-            chip=newchip;
-            peso=newpeso;
-            altura=newaltura;
+
+        public String getpelo(){
+            return pelo;
         }
-        public String toString(){
-            return "Raza: " +raza+"\nCaracterísticas: "+"\nPelo:"+pelo+"  Color:"+color+"  Chip:"+chip+"  Peso:"+peso+"kg"+"  Altura:"+altura+"cm"+"\n";
+        public String getcolor(){
+            return color;
         }
+        public int getchip(){
+            return chip;
+        }
+        public int getpeso(){
+            return peso;
+        }
+        public int getaltura(){
+            return altura;
+        }
+        public void setpelo(String pelo) {
+            this.pelo = pelo;
+            }
+        public void setcolor(String color) {
+            this.color = color;
+        }
+        public void setchip(int chip) {
+            this.chip = chip;
+            }
+        public void setpeso(int peso) {
+            this.peso = peso;
+            }  
+        public void setaltura(int altura) {
+            this.altura = altura;
+            }
+
+        public String ladrar(int n1, int n2){
+            
+            String ladrido = "";
+            peso = n1;
+            altura = n2;
+        
+            if (peso>=10 && altura>25) {
+                ladrido ="Ladrido 1";
+            } else if (peso>10 && altura>=25) {
+                ladrido ="Ladrido 2";
+            } else if (peso<=10 && altura<=25) {
+                ladrido ="Ladrido 3";
+            }
+            return ladrido;
+        }            
     }
