@@ -6,13 +6,22 @@ public class Perro {
         private String color = "Marron";
         private int chip = 777;
 
-        public String tipo_pelo(){
-            return "El pelo es "+ pelo;
+        public String getpelo(){
+            return pelo;
         }
-        public String color_pelo(){
-            return "El color del pelo es "+ color;
+        public String getcolor(){
+            return color;
         }
-        public String numero_chip(){
-            return "El numero del chip es "+ chip;
+        public int getchip(){
+            return chip;
         }
+        public void setpelo(String pelo) {
+            this.pelo = pelo;
+            }
+        public void setcolor(String color) {
+            this.color = color;
+        }
+        public void setchip(int chip) {
+            this.chip = chip;
+            }           
     }
