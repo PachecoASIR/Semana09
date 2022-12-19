@@ -1,6 +1,6 @@
 public class Perro {
 
-        private String pelo;
-        private String color;
-        private int chip;   
+        private String pelo = "Liso";
+        private String color = "Marron";
+        private int chip = 777;
     }
